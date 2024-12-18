@@ -1,47 +1,358 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Zomata: A Food Delivery App
-        </title>
-        <link rel="stylesheet" href="zomato.css">
-    </head>
-    <body>
-        
-        <header>
-            <nav>
-                <div id="left">
-      <i class="fa-solid fa-mobile" style="color:#ffffff"></i> 
-     <span>Get the app</span>
-        </div>
+<html lang="en">
 
-        <div id="right">
-            <ul>
-                <li>Investor relation</li>
-                <li>Add restaurant</li>
-                <li>Log in</li>
-                <li>Sign in</li>
-            </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zamataa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="zomato.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div id="left">
+                <i class="fa-solid fa-mobile" style="color: #ffffff;"></i>
+                <span>Get The App</span>
             </div>
+
+            <div id="right">
+                <ul>
+                    <li>Investor Relations</li>
+                    <li>Add Restaurants</li>
+                    <li>Log In</li>
+                    <li>Sign Up</li>
+                </ul>
+            </div>
+        </nav>
         <div id="main">
             <div id="logo">
-            <img src="zomato.png" alt="zomato"></div>
+                <img src="zomatologo.png" alt="Zomata Logo" />
+            </div>
             <div id="tagline">
                 <h1>Discover the best food & drinks in Ahmedabad</h1>
             </div>
-            <div id="searchcontainer">
+            <div id="searchContainer">
                 <div id="city">
-                     <i style="color: #ff7a8b;"></i> 
-                    <input type="text" placeholder="Mumbai">
-                     <i style="color: #888888;"></i> 
-
+                    <select class="dropBox" name="city" id="city">
+                        <option value="volvo">Ahmedabad</option>
+                        <option value="saab">Mumbai</option>
+                        <option value="opel">Rajasthan</option>
+                        <option value="audi">Bihar</option>
+                    </select>
+                    <input type="text" placeholder="Search for restaurant, cuisine or dish" class="SearchBar">
                 </div>
-                
 
+                <div id="restaurant">
+                    <!-- <img> -->
+                    <span></span>
+                </div>
             </div>
         </div>
-                
-            
+    </header>
+    <section id="main-body">
+        <div id="services">
+            <div id="option">
+                <div id="image">
+                    <img src="order-online.png" alt="order-online-food" />
+
+                </div>
+                <div id="info">
+                    <h2>Order Online</h2>
+                    <p>Stay home and order to your doorstep</p>
+                </div>
+            </div>
+
+            <div id="option">
+                <div id="image">
+                    <img src="dining.png" alt="Dining Table" />
+
+                </div>
+                <div id="info">
+                    <h2>Dining</h2>
+                    <p>View the city's favourite dining venues</p>
+                </div>
+            </div>
+
+            <div id="option">
+                <div id="image">
+                    <img src="live-events.png" alt="Live Events" />
+
+                </div>
+                <div id="info">
+                    <h2>Live Events</h2>
+                    <p>Discover India's best events & concerts</p>
+                </div>
+            </div>
         </div>
-    </body>
+    </section>
+
+    <section id="collection">
+        <h2>Collection</h2>
+        <div id="col-discription">
+          <p>
+            Explore curated lists of top -restaurants, cafes, pubs, and bars in
+            Mumbai, based on trends
+          </p>
+          <a href=""
+            >All collection in Mumbai
+            <i class="fa-solid fa-caret-right" style="color: #ff7a8b"></i
+          ></a>
+        </div>
+  
+        <div id="col-list">
+          <div id="list-item">
+            <div id="list-imge">
+              <img src="senery.png.jpeg" alt="" />
+            </div>
+            <div id="list-content">
+              <div id="content-info">
+                <p>Newly opened Restaurant</p>
+                <a href=""
+                  >4 places
+                  <i class="fa-solid fa-caret-right" style="color: #fff"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+  
+          <div id="list-item">
+            <div id="list-imge">
+              <img src="toptrending sports.png" alt="" />
+            </div>
+            <div id="list-content">
+              <div id="content-info">
+                <p>Top Trending Sports</p>
+                <a href=""
+                  >19 places
+                  <i class="fa-solid fa-caret-right" style="color: #fff"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+  
+          <div id="list-item">
+            <div id="list-imge">
+              <img src="gujarati thalis.png" alt="" />
+            </div>
+            <div id="list-content">
+              <div id="content-info">
+                <p>Gujarati Thalis</p>
+                <a href=""
+                  >18 places
+                  <i class="fa-solid fa-caret-right" style="color: #fff"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+  
+          <div id="list-item">
+            <div id="list-imge">
+              <img src="rooftop.png.avif" alt="" />
+            </div>
+            <div id="list-content">
+              <div id="content-info">
+                <p>Best Buffects in Town</p>
+                <a href=""
+                  >26 places
+                  <i class="fa-solid fa-caret-right" style="color: #fff"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section id="location">
+        
+        <div id="location-title">
+            <p>Popular localities in and around <strong>Ahmedabad</strong></p>
+          </div>
+          <div id="place_container">
+            <div class="place">
+                <div class="place_name">
+                    <h5>Bodakdev</h5>
+                    <p>477 Places</p>
+                </div>
+                <i class="fa-solid fa-caret-right" style="color: #363636"></i>
+            </div>
+
+            <div class="place">
+                <div class="place_name">
+                    <h5>Bodakdev</h5>
+                    <p>477 Places</p>
+                </div>
+                <i class="fa-solid fa-caret-right" style="color: #363636"></i>
+            </div>
+
+            <div class="place">
+                <div class="place_name">
+                    <h5>Bodakdev</h5>
+                    <p>477 Places</p>
+                </div>
+                <i class="fa-solid fa-caret-right" style="color: #363636"></i>
+            </div>
+
+            <div class="place">
+                <div class="place_name">
+                    <h5>Bodakdev</h5>
+                    <p>477 Places</p>
+                </div>
+                <i class="fa-solid fa-caret-right" style="color: #363636"></i>
+            </div>
+
+            <div class="place">
+                <div class="place_name">
+                    <h5>Bodakdev</h5>
+                    <p>477 Places</p>
+                </div>
+                <i class="fa-solid fa-caret-right" style="color: #363636"></i>
+            </div>
+
+            <div class="place">
+                <div class="place_name">
+                    <h5>Bodakdev</h5>
+                    <p>477 Places</p>
+                </div>
+                <i class="fa-solid fa-caret-right" style="color: #363636"></i>
+            </div>
+
+            <div class="place">
+                <div class="place_name">
+                    <h5>Bodakdev</h5>
+                    <p>477 Places</p>
+                </div>
+                <i class="fa-solid fa-caret-right" style="color: #363636"></i>
+            </div>
+
+            <div class="place">
+                <div class="place_name">
+                    <h5>Bodakdev</h5>
+                    <p>477 Places</p>
+                </div>
+                <i class="fa-solid fa-caret-right" style="color: #363636"></i>
+            </div>
+
+            <div class="place">
+                <div class="Seemore">
+                    <p>See More</p>
+                </div>
+                <i class="fa-solid fa-chevron-down" style="color: #363636"></i>
+            </div>
+        </div>
+      </section>
+
+
+
+    <section id="nearbe_option">
+        <div class="nearbeoption_heading">
+            <p>Explore options near me</p>
+        </div>
+
+        <div class="option_container">
+            <div class="option">
+                <div class="option_name">
+                    <p>Popular Cuisines Near Me</p>
+                </div>
+                <i class="fa-solid fa-chevron-down" style="color: #363636"></i>
+            </div>
+
+            <div class="option">
+                <div class="option_name">
+                    <p>Popular Resturant Type Near me</p>
+                </div>
+                <i class="fa-solid fa-chevron-down" style="color: #363636"></i>
+            </div>
+
+
+            <div class="option">
+                <div class="option_name">
+                    <p>Top Restaurant Chain</p>
+                </div>
+                <i class="fa-solid fa-chevron-down" style="color: #363636"></i>
+            </div>
+
+
+            <div class="option">
+                <div class="option_name">
+                    <p>Cities We Diliver To</p>
+                </div>
+                <i class="fa-solid fa-chevron-down" style="color: #363636"></i>
+            </div>
+         </div>
+      </section>
+    <footer class="footer">
+        <section class="footerSection1">
+            <img class="footerimg" src="footerLogo.png" alt="zomato logo" />
+            <section class="inFootSection1">
+                <select class="dropBox" name="country" id="country">
+                    <option value="India">India</option>
+                    <option value="UAE">UAE</option>
+                </select>
+            </section>
+            <!-- <select class="dropBox" name="lang" id="lang">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Italian">Italian</option>
+                <option value="Portugues">Portugues</option>
+                <option value="Korean">Korean</option>
+            </select> -->
+        </section>
+
+        <section class="footerList">
+            <div class="footDiv1">
+                <h4> About Zomato </h4>
+                <ul>
+                    <li> Who We Are</li>
+                    <li>Blog</li>
+                    <li>Work With Us</li>
+                    <li>Investor Relations</li>
+                    <li>Report Fraud</li>
+                    <li>Press Kit</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+
+            <div class="footDiv2">
+                <h4>Zomaverse</h4>
+                <ul>
+                    <li>Zomato</li>
+                    <li>Blinkit</li>
+                    <li>District</li>
+                    <li>Feeding India</li>
+                    <li>Hyperpure</li>
+                    <li>Zomato Live</li>
+                    <li>Zomaland</li>
+                    <li>Weather Union</li>
+                </ul>
+            </div>
+
+            <div class="footDiv3">
+                <h4>For Restaurants</h4>
+                <ul>
+                    <li>Partner With Us</li>
+                    <li>Apps For You</li>
+                </ul>
+            </div>
+
+            <div class="footDiv4">
+                <h4> Learn More</h4>
+                <ul>
+                    <li>Privacy</li>
+                    <li>Security</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+        <p class="footerText">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy
+            Policy and Content
+            Policies. All trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All rights
+            reserved.</p>
+    </footer>
+</body>
+
 </html>
